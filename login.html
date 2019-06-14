@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ECdataway</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/login.css"/>
+<script src="js/jquery/jquery.js"></script>
+<script>
+    $(function(){
+        bg_size();
+        $(window).resize(function() {
+            bg_size();
+        });
+        
+        function bg_size(){
+            var w_h = $(window).height();
+            var t_h = 60;
+            
+            if(w_h - t_h > 500){
+                $(".login_body").css('height',w_h-t_h);
+            }else{
+                $(".login_body").css('height',"500px");
+            }        
+        }
+    });
+</script>
+</head>
+ 
+<body>
+    <div class="title bg_black clear_fix">
+        <img class="brand_icon" src="img/logo_short.png"/>
+        <span class="go_back color_blue2">返回ECdataway首页 -></span>
+    </div>
+    <div class="login_body">
+        <div class="login_bar">
+            <div class="slogan1">阿里大客户版(原情报通)</div>
+            <div class="slogan2">Ali Stire Operation</div>
+            <div class="login_form clear_fix">
+                <div class="pdH15 clear_fix">
+                    <span class="text-left colorff fs20" style="float: left">登录</span>
+                    <span class="color_blue2 pdH10 fs12" style="float: right">没有账号，免费申请</span>
+                </div>
+                
+                <input class="txt_input" type="text" placeholder="您的账户"/>
+                <div class="err_log" style="min-height: 30px;">
+                    <div class="txt_tips hidden">
+                        <span class="mark"></span>
+                        <p>aaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                
+                <input class="txt_input" type="text" placeholder="密码"/>
+                <div class="err_log">
+                    <div class="txt_tips hidden">
+                        <span class="mark"></span>
+                        <p>aaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                
+                <div class="txt_tips">
+                    <span class="mark"></span>
+                    <p>请先安装插件<span class="tip_btn"><a class="aDecorCancel color_green">点击安装</a></span></p>
+                    <p>下载浏览器扩展<span class="tip_btn color_green"><a class="aDecorCancel color_green">点击查看如何安装浏览器扩展？</a></span></p>
+                    <p>安装完成后，请重新启动浏览器</p>
+                    <p>安装插件有问题<span class="tip_btn color_green"><a class="aDecorCancel color_green">点击查看帮助</a></span></p>
+                </div>
+                <div class="login_btn">登录</div>
+            </div>
+            <div class="contect pdH15">
+                <div class="fs12 color_blue3">国内热线：400-166-9698</div>
+                <div class="fs12 color_blue3">国际热线：86-021-51036785</div>
+            </div>
+        </div>
+        
+        <div class="login_footer color_blue4">
+            <p class="mgHnone">爱德威信息科技（上海）有限公司</p>
+            <p>©2015 ADWAYS TECHNOLOGY LIMITED. All Rights Reserved. 沪ICP备14010700号-3</p>
+        </div>
+    </div>
+</body>
+</html>

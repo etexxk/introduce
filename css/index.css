@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+    padding:0px;
+    margin:0px;
+    border:none;
+}
+
+.content{
+    padding:0;
+    background:url(../img/index3/big_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.content_center{
+    position:relative;
+    width:70%;
+    height:auto;
+    min-width:800px;
+    margin:0 auto;
+}
+
+.sub_bar .con_row{
+    padding:5px;
+}
+
+.head_begin{
+    /*position:absolute;
+    top:30px;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);*/
+    width:100%;
+    height:auto;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.head_begin .brand_icon{
+    width:20%;
+    float:left;
+    height:55px;
+    overflow: visible;
+}
+
+.head_begin>.brand_icon img{
+    height:55px;
+    width:auto;
+    padding:12px;
+}
+
+.head_begin .top{
+    width:80%;
+    float:left;
+    background:none;
+    z-index:1;
+}
+
+.top .title1,.top .title2{
+     background:none;
+}
+
+.head_begin>.top .title1{
+    
+}
+
+.title1 .menu{
+    padding-bottom:0px;
+    padding-top:0px;
+}
+
+.title1 .menu li{
+    border:none;
+    cursor:pointer;
+}
+
+.title1 .menu li span{
+    color:white;
+}
+
+.head_begin .top .title2{
+    background:none;
+    height:auto;
+}
+
+.title2 ul li a{
+    padding-top:8px;
+     padding-bottom:0px;   
+}
+
+.slogan1{
+    /*position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-50%) translateY(-50%);
+    font-weight:800;
+    letter-spacing:2px;
+    word-spacing:20px;*/
+    margin:0 auto;
+}
+.slogan1 .slogon_title {
+    width: 100%;
+    height: auto;
+    margin: 90px 0px 20px 0px;
+    margin-top: 130px;
+    text-align: center;
+}
+
+.slogan1 .slogon_title img{
+    height:52px;
+    width:auto;
+}
+
+@media (max-width:950px){
+    .slogan1 .slogon_title img{
+        height:32px;
+        width:auto;
+    }
+    .slogan1 .application{
+        margin:50px 0px 50px 0px
+    }
+}
+
+.slogan1 .slogon_sub{
+    color:white;
+    text-align:center;
+    font-size:24px;
+    letter-spacing:0px;
+    word-spacing:5px;
+}
+
+.slogan1 .application #free_application{
+     margin:50px auto;
+    margin-bottom: 200px;
+}
+
+#free_application{
+    width:160px;
+    height:auto;
+    background:none;
+    padding:5px;
+    color:white;
+    text-align:center;
+    border:1px solid white;
+    border-radius:5px;
+    letter-spacing:0;
+}
+
+.footer{
+    /*position:fixed;*/
+    bottom:0px;
+}
+
+/*.content_center,.slogan1,.content_middle,.head_begin .brand_icon,.top .title1,.top .title2,.head_begin>.top,.head_begin>.brand_icon,.head_begin{
+     border:1px solid black;   
+}*/

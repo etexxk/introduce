@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    font-family:"黑体",Georgia, "Times New Roman", Times, serif;    
+}
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+.clear_fix:before,.clear_fix:after{
+    content:' ';
+    display:table;
+    clear:both;
+}
+
+.form_btn{
+    cursor:pointer;
+}
+
+.form_btn:active{
+    box-shadow:inset 0px 2px 20px 2px #CCC;   
+}
+
+.mobile_middle{
+     width:100%;
+    min-width:200px;
+    max-width:2000px; 
+    margin:0 auto;  
+}
+
+.m_title{
+    padding:0px;
+    background:#1b1a20;
+    text-align:center;
+    min-width:320px;
+}
+
+.m_title:before,.m_title:after{
+    content:' ';
+    clear:both;
+    display:table;
+}
+
+.m_title div{
+    font-size:12px;
+    font-weight:700;
+    color:white;
+    text-align:center;
+}
+
+.m_title>.go_back,.m_title>.model_set{
+    padding:10px;
+    width:15%;
+    cursor:pointer;
+}
+
+.m_title>.go_back:active,.m_title>.model_set:active{
+    background:#444;
+}
+
+.m_title>.go_back{
+    float:left;
+}
+
+.m_title>.title_name{
+    clear:both;
+    padding:10px;
+    margin:0 auto;
+    display:inline-block;
+    overflow:hidden;
+}
+
+.m_title>.model_set{
+    float:right;
+    font-size:9px;
+    letter-spacing:3px;
+}
+
+@media (max-width:330px){
+    .m_title{
+        padding:0px;
+        background:#1b1a20;
+        text-align:center;
+    }
+    
+    .m_title:before,.m_title:after{
+        content:' ';
+        clear:both;
+        display:table;
+    }
+    
+    .m_title div{
+        font-size:12px;
+        font-weight:700;
+        color:white;
+        text-align:center;
+    }
+    
+    .m_title>.go_back{
+        float:left;
+    }
+    
+    .m_title>.go_back,.m_title>.model_set{
+        width:50px;
+    }
+    
+    .m_title>.title_name{
+        clear:both;
+        padding:10px 0px;
+        margin:0 auto;
+        display:inline-block;
+        overflow:hidden;
+    }
+    
+    .m_title>.model_set{
+        float:right;
+        font-size:7px;
+        padding:12px;
+        letter-spacing:3px;
+    }
+}
+.m_content{
+    background:url(../../img/mobile/bg_img.jpg) repeat;
+}
+
+.m_content .holiday_logo{
+    width:100%;
+}
+
+.m_content .holiday_logo img{
+    width:100%;
+    height:auto;
+}
+
+.products{
+    width:100%;
+    height:auto;
+    margin:10px 0px;
+}
+
+.products ul{
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    width:80%;
+    height:auto;
+}
+
+.products ul li{
+    float:left;
+    text-align:center;
+    width:16.66666%;
+    height:auto;
+}
+
+.products  ul li .icon_img{
+    width:100%;
+}
+
+.products  ul li .icon_img img{
+    width:30%;
+    height:auto;
+}
+
+.products  ul li .pro_name{
+    width:100%;
+    padding:10px 0px;
+    text-align:center;
+     color:#a40035;
+    font-size:5px;
+    font-weight:600;
+}
+
+@media (max-width:330px){
+    .products  ul li .pro_name{
+        width:100%;
+        text-align:center;
+        color:#a40035;
+        font-size:5px;
+        font-weight:400;
+    }
+}
+
+.forms{
+    width:100%;
+     height:auto;
+    text-align:center;
+}
+
+.forms input{
+    border:none;
+    padding:5px 0px;
+    width:90%;
+    margin:10px 0px;
+    outline:none;
+    background:white;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:700; 
+}
+
+.forms>.whole_intext{
+    height:30px;
+}
+
+.forms>.security_code{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+}
+
+.forms>.security_code>.txt_code{
+    float:left;
+     width:50%;
+    height:30px;
+}
+
+.forms>.security_code>.btn_code{
+    float:right;
+    width:38%;
+    height:40px;
+    text-align:center;
+    color:#fc494c;
+    font-size:14px;
+    font-weight:700; 
+}
+
+.forms>.btn_ok{
+    color:#f90102;
+    height: 40px;
+    font-size:14px;
+    font-weight:700;
+    /*background:#ffec2d;*/
+    /*background:#ffc119;*/
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffec2d,endColorStr=#ffc119); /*IE 6 7 8*/ 
+    background: -ms-linear-gradient(top, #ffec2d,  #ffc119);        /* IE 10 */
+    background:-moz-linear-gradient(top,#ffec2d,#ffc119);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ffec2d), to(#ffc119));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffec2d), to(#ffc119));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #ffec2d, #ffc119);   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #ffec2d, #ffc119);  /*Opera 11.10+*/
+}

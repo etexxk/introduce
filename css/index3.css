@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+.no_warp{
+    white-space:nowrap;
+    text-wrap:none !important;
+    word-break:keep-all;
+}
+
+.fa_alt{
+    position: relative;
+}
+
+.intro_card{
+    padding: 20px 10px 0px 10px ;
+}
+
+.intro_card .card_text{
+    background: rgba(0,0,0,0.7);
+    padding: 20px 0px;
+}
+
+.intro_card .h11{
+    color: #438ced;
+    font-weight: 900;
+    text-shadow: 3px;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.intro_card .h41{
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.intro_card .h51{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.banner_title{
+    margin-top: 0px;
+    font-size: 24px;
+}
+
+.banner_sub_title{
+    font-size: 12px;
+}

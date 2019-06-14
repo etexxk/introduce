@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+.tips_mark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    z-index: 998;
+}
+
+.tips{
+   z-index: 999;
+}
+
+.arrow_left,.arrow_right,.arrow_top,.arrow_bottom,.tip_next_btn,.tip_finish_btn,.tips_content{
+    background-image: url(../img/searchTip.png);
+    z-index: 1000; 
+}
+
+.tipbarwords{
+    background-image: url(../img/tips_content.png);
+    z-index: 1000; 
+}
+
+.tipwords{
+    background-image: url(../img/tips_content.png);
+}
+
+.step{
+    
+}
+
+#step-1{
+    
+}
+
+#step-2{
+    
+}
+
+.arrow_left{
+    width:70px;
+    height:40px;
+    background-position: -265px -5px;
+}
+
+.arrow_right{
+    width:70px;
+    height:40px;
+    background-position: -193px -5px;
+}
+
+.arrow_top{
+    
+}
+
+.arrow_bottom{
+    
+}
+/*tip bar : use this eara to show your imagic text,what ever in text or imgge*/
+.tipbar{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tip_words{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+/*tip bar end*/
+
+/*tip content start*/
+.tips_content{
+    width: 300px;
+    z-index: 1000; 
+}
+
+.tips_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    display: inline-block;
+    /*height: 200px;*/
+    background-position: 0px -95px;
+}
+
+.tip_colse_btn{
+    background: #0c95da;
+    height: 20px;
+    width: 20px;
+    border:1px solid #186596;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right:0px;
+    top:0px;
+    -webkit-transform: translateX(50%) translateY(-50%);
+    transform: translateX(50%) translateY(-50%);
+    cursor: pointer;
+}
+
+.tip_txt{
+    /*position: absolute;
+    top: 39%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+    min-height: 20px;
+    min-width: 100px;
+    color: white;
+    padding: 0px 0px 10px 0px;
+}
+
+.tips_arrow_txt{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: inline-block;
+    min-height: 20px;
+    min-width: 100px;
+    color: white;
+    padding: 0px 0px 3px 0px;
+    z-index:1000;
+}
+
+.tip_widge{
+    display: inline-block;
+    /*position: absolute;
+    bottom: 45px;
+    left: 50%;*/
+    width: 100%;
+    /*-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+}
+
+.tip_process{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tip_process li{
+    float: left;
+    height: 8px;
+    width: 8px;
+    margin: 10px 1px;
+    border:2px solid White;
+    border-radius: 5px;
+}
+
+.tip_process .on{
+    /*background: #186596;*/
+    background: white;
+}
+
+.tip_widge ul,.tip_widge .tip_next_btn{
+    float: left;
+}
+
+.tip_widge .tip_next_btn,.tip_widge .tip_finish_btn{
+    float: right;
+    height: 31px;
+    width: 84px;
+    background-position:-683px -298px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    /*border:1px solid red;*/
+}
+
+.tip_widge .tip_finish_btn{
+    background-position:-442.3px -126.3px;
+}
+
+/*.tip_widge,.tipwords,.tipbarwords,.tips_content,.arrow_left,.arrow_right,.arrow_top,.arrow_bottom{
+    border:1px solid white;
+}*/
+
+

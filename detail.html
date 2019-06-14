@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>了解详情</title>
+<script src="js/jquery/jquery.js"></script>
+<script src="css/bootstrap-3.3.6/js/bootstrap.js"></script>
+<script src="js/title.js"></script>
+<script src="js/detail.js"></script>
+<script src="js/banner_slid.js"></script>
+<link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.6/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<style type="text/css">
+body,td,th {
+    font-family: sans-gb-w3, "黑体", sans-serif, Arial, Helvetica;
+}
+</style>
+</head>
+
+<body>
+<!--head start-->
+<div class="top">
+    <div class="title1">
+        <div class="content_middle">
+            <ul class="menu">
+                <li id="btn_login">
+                    <span>登录</span>
+                </li>
+                <li>
+                     <span>在线客服</span>
+                </li>
+                <li>
+                     <span>收藏</span>
+                     <div class="sub_bar hidden"></div>
+                 </li>
+                <li>
+                     <span>热线电话</span>
+                     <div class="sub_bar hidden">
+                         <div class="list-inline">
+                            <div class="con_row">
+                                <span>国内热线&nbsp;:&nbsp;<span><span>400-166-9698<span>
+                            </div>
+                            <div class="con_row">
+                                <span>国际热线&nbsp;:&nbsp;<span><span>+86-021-51036785<span>
+                            </div>
+                        </div>
+                     </div>
+                 </li>
+                 <li>
+                     <span class="lan_change"> 中文(简体)</span>
+                     <div class="sub_bar hidden" id="language">
+                         <div class="list-inline">
+                            <span>ENGLISH</span>
+                        </div>
+                     </div>
+                 </li>
+            </ul>
+        </div>
+    </div>
+    <div class="title2">
+        <div class="content_middle">
+            <div class="brand_icon pull-left"><img height=""src="img/outlogo_white.png"></div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="bg_title1"><a href="detail.html">了解情报通</a></li>
+                <li><a href="study.html">数据学院</a></li>
+                <li><a href="freeuse.html">免费试用</a></li>
+                <li><a href="report_download.html">报告下载</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--head end-->
+
+<div class="content">
+    <div class="brand_slid clearfix">
+        <div class="banner_slid">
+            <div class="banner_img">
+                <ul class="img_list clear_fix">
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <li>
+                        <img src="img/banner0.png">
+                    </li>
+                    <!--test-->
+                    <!--<li>
+                        <img src="img/slid_banner/banner1.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner2.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner3.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner4.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner1.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner2.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner3.png">
+                    </li>
+                    <li>
+                        <img src="img/slid_banner/banner4.png">
+                    </li>-->
+                    <!--end test-->
+                </ul>
+                <div class="banner_txt_cloud">
+                    <div class="banner_title">情报通电商数据专家</div>
+                    <div class="banner_sub_title">关注订阅情报通微信订阅，实时掌握电商动态</div>
+                </div>
+                <!--<div class="page_left glyphicon glyphicon-chevron-left"></div>
+                <div class="page_right glyphicon glyphicon-chevron-right"></div>-->
+                <!--<div class="page_left"></div>
+                <div class="page_right"></div>-->
+                <div class="page_bottom">
+                    <span name="1" class="banner_img_hover"></span>
+                    <span name="2" ></span>
+                    <span name="3" ></span>
+                    <span name="4" ></span>
+                </div>
+            </div>
+        </div>
+        
+        <!--<div class="content_middle banner_login">-->
+            <div class="banner_login_frame">
+                <div class="banner_login_title">
+                    <div class="sign_title bg_white">免费申请</div>
+                    <div class="login_tile bg_grey">已有账户?直接登录</div>
+                </div>
+                
+                <div class="banner_login_content show" id="apply">
+                    <!--<div class="title">
+                        <div class="title1">情报通账号免费申请</div>
+                        <div class="title2">留下您的信息，立即体验精准电商数据</div>
+                        <div class="glyphicon glyphicon-pencil icon_img"></div>
+                    </div>-->
+                    <div class="login_content">
+                        <div class="row"><input type="text" placeholder="您的公司名称"></div>
+                        <div class="row error_str"></div>
+                        
+                        <div class="row"><input type="text" placeholder="您的店铺名称"></div>
+                        <div class="row error_str"></div>
+                        
+                        <div class="row"><input type="text" placeholder="您的QQ号"></div>
+                        <div class="row error_str"></div>
+                        
+                        <div class="row"><input type="text" placeholder="您的手机号"></div>
+                        <div class="row error_str"></div>
+                        
+                        <div class="row security_code">
+                            <input type="text" placeholder="填写验证码">
+                            <div class="btn_grey code_btn">获取验证码</div>
+                        </div>
+                        <div class="row error_str"><span class="icon_err">&times;</span><span> 验证码错误</span></div>
+                        
+                        <div class="row">
+                            <div class="btn btn-block apply">免费申请</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="banner_login_content hidden" id="login">
+                    <!--<div class="title">
+                        <div class="title1">用户登录</div>
+                        <div class="glyphicon glyphicon-pencil icon_img"></div>
+                    </div>-->
+                    <div class="login_content">
+                        <div class="row"><input type="text" placeholder="请输入账号"></div>
+                        <div class="row error_str"></div>
+                        
+                        <div class="row"><input type="password" placeholder="请输入登录密码"></div>
+                        <div class="row error_str"></div>
+                        
+                        <div class="row security_code">
+                            <input type="text" placeholder="填写验证码">
+                            <div class="btn_grey code_btn">获取验证码</div>
+                        </div>
+                        <div class="row error_str"><span class="icon_err">&times;</span><span> 验证码错误</span></div>
+                        
+                        <div class="row">
+                            <div class="btn btn-block apply">登录</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--</div>-->
+    </div>
+    
+    <div class="content_middle" style="width:90%">
+        <div class="application_free">
+            <ul>
+                <li class="col-md-2 col-xs-2 img1">
+                    <div class="icon_img"></div>
+                    <div class="text-center h4">行业分析</div>
+                    <div class="application_free_btn">免费申请</div>
+                    <div class="text-center h5 more">更多详情</div>
+                </li>
+                <li class="col-md-2 col-xs-2 img2">
+                    <div class="icon_img"></div>
+                    <div class="text-center h4">品牌分析</div>
+                    <div class="application_free_btn">免费申请</div>
+                    <div class="text-center h5 more">更多详情</div>
+                </li>
+                <li class="col-md-2 col-xs-2 img3">
+                    <div class="icon_img"></div>
+                    <div class="text-center h4">店铺分析</div>
+                    <div class="application_free_btn">免费申请</div>
+                    <div class="text-center h5 more">更多详情</div>
+                </li>
+                <li class="col-md-2 col-xs-2 img4">
+                    <div class="icon_img"></div>
+                    <div class="text-center h4">营销组合分析</div>
+                    <div class="application_free_btn">免费申请</div>
+                    <div class="text-center h5 more">更多详情</div>
+                </li>
+                <li class="col-md-2 col-xs-2 img5">
+                    <div class="icon_img"></div>
+                    <div class="text-center h4">钻展分析</div>
+                    <div class="application_free_btn">免费申请</div>
+                    <div class="text-center h5 more">更多详情</div>
+                </li>
+                <li class="col-md-2 col-xs-2 img6">
+                    <div class="icon_img"></div>
+                    <div class="text-center h4">宝贝分析</div>
+                    <div class="application_free_btn">免费申请</div>
+                    <div class="text-center h5 more">更多详情</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="more_func">
+        <div class="banner_title_single">情报通合作品牌</div> 
+        <div class="banner_list">
+            <ul>
+                <li class="col-md-12 col-xs-12"><img src="img/brand_02.jpg"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="content_middle">   
+        <div class="choose_qbt">
+            <div class="banner_title">为什么选择情报通</div>
+            <div class="banner_sub_title">用精准数据 做准确决策</div>
+        </div>
+        <div class="banner_list">
+            <ul>
+                <li class="col-md-12 col-xs-12"><img src="img/banner1.png"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="more_func">
+        <div class="banner_title">新版情报通 即将面世</div> 
+        <div class="banner_sub_title">更多功能 更强体验 等你体验</div>
+        <div class="banner_list">
+            <ul>
+                <li class="col-md-4 col-xs-4"><img src="img/banner/bk/banner2_07.png"></li>
+                <li class="col-md-4 col-xs-4"><img src="img/banner/bk/banner2_08.png"></li>
+                <li class="col-md-4 col-xs-4"><img src="img/banner/bk/banner2_09.png"></li>
+            </ul>
+            <ul>
+                <li class="col-md-4 col-xs-4"><img src="img/banner/bk/banner2_10.png"></li>
+                <li class="col-md-4 col-xs-4"><img src="img/banner/bk/banner2_11.png"></li>
+                <li class="col-md-4 col-xs-4"><img src="img/banner/bk/banner2_12.png"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="content_middle">   
+        <div class="qbt_mobile">
+            <div class="banner_title_single">手机端建设中</div> 
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+    <div class="content_middle">
+        <ul class="qbt_info">
+            <li class="info_list">
+                <ul class="info_detail">
+                    <li class="detail_title">
+                        服务保障
+                    </li>
+                    <li class="detail_list">
+                        专家一对一服务
+                    </li>
+                    <li class="detail_list">
+                        专家定制模块
+                    </li>
+                </ul>
+            </li>
+            <li class="info_list">
+                <ul class="info_detail">
+                    <li class="detail_title">
+                        使用帮助
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">使用指南</a>
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">常见问题</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="info_list">
+                <ul class="info_detail">
+                    <li class="detail_title">
+                        我们的服务
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">线上/线下培训</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="info_list">
+                <ul class="info_detail">
+                    <li class="detail_title">
+                        关于情报通
+                    </li>
+                    <li class="detail_list">
+                        <a href="about_us.html">公司介绍</a>
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">网站地图</a>
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">工作机会</a>
+                    </li>
+                    <li class="detail_list">
+                        <a href="mobile_day_1111.html">友情链接</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="info_list">
+                <ul class="info_detail">
+                    <li class="detail_title">
+                        新闻中心
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">行业动态</a>
+                    </li>
+                    <li class="detail_list">
+                        <a href="#">公司新闻 </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="info_list">
+                <ul class="info_detail">
+                    <li class="detail_title">
+                        咨询方式
+                    </li>
+                    <li class="detail_list">
+                        国内热线：400-166-9698
+                    </li>
+                    <li class="detail_list">
+                        国际热线：+86-021-51036785
+                    </li>
+                    <li class="detail_list">
+                        接待时间：工作日 09:00～18:00
+                    </li>
+                    <li class="detail_list">
+                        <ul class="att_barcode clear_fix">
+                            <li>
+                                <div class="barcode_2d hidden"><div></div><img src="img/2D_barcode.png"></div>
+                                <img class="weibo" src="img/weixin.png">
+                            </li>
+                            <li>
+                                <div class="barcode_2d hidden"><div></div><img src="img/2D_barcode_weibo.png"></div>
+                                <img class="weibo" src="img/xinlang.png">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        © 2016 情报通 - All Rights Reserved  沪ICP备14010700号
+    </div>
+</div>
+<!--footer end-->
+
+<div class="right_bar">
+    <ul>
+        <li>
+            <div class="left_img_half line_call"></div>
+            <div class="left_txt">在线咨询</div>
+            <!--<div class="left_icon_cont hidden">
+                <div class="row_txt">产品咨询</div>
+                <div class="row_txt">售后服务</div>
+            </div>-->
+        </li>
+        <li><div class="left_txt">申请试用</div></li>
+        <li>
+            <div class="left_img_full code_2d"></div>
+            <div class="left_icon_cont barcode_img hidden">
+                <img src="img/2D_barcode.png">
+            </div>
+        </li>
+        <li>
+            <div class="left_img_full phone_call"></div>
+            <div class="left_icon_cont hidden">
+                <div class="row_txt"><span>国内热线&nbsp;:&nbsp;</span><span>400-166-9698</span></div>
+                <div class="row_txt"><span>国际热线&nbsp;:&nbsp;</span><span>+86-021-51036785</span></div>
+            </div>
+        </li>
+        <li onclick="javascript:document.getElementById('scroll_top').scrollIntoView()"><div class="left_img_full to_home"></div></li>
+    </ul>
+</div>
+
+<div class="bg_mask hidden"></div>
+<div class="holiday hidden">
+    <div class="cloud_right">
+        <div class="bar_close hidden">&times;</div>
+        <div class="countdown show"><div>倒计时:6</div></div>
+    </div>
+    <img class="holiday_board" src="img/holiday_img/banner1.png">
+</div>
+
+<div class="banner_login_content apply_cloud hidden">
+    <div class="cloud_right">
+        <div class="bar_close">&times;</div>
+    </div>
+    <div class="login_content">
+        <div class="row"><input type="text" placeholder="您的公司名称"></div>
+        <div class="row error_str"></div>
+        <div class="row"><input type="text" placeholder="您的店铺名称"></div>
+        <div class="row error_str"></div>
+        <div class="row"><input type="text" placeholder="您的QQ号"></div>
+        <div class="row error_str"></div>
+      <div class="row"><input type="text" placeholder="您的手机号"></div>
+        <div class="row error_str"></div>
+        <div class="row security_code">
+            <input type="text" placeholder="填写验证码">
+            <div class="btn_grey code_btn">获取验证码</div>
+        </div>
+        <div class="row error_str"></div>
+        <div class="row">
+            <div class="btn btn-danger btn_submit" style="width:90%;background:#fc494c;border:none;">我&nbsp;&nbsp;要&nbsp;&nbsp;订&nbsp;&nbsp;购</div>
+        </div>
+        <div class="text-center h5" style="color:#ccc;">*老客户联系对应销售此活动可享受优惠价</div>
+    </div>
+</div>
+
+<div class="barcode_2d_cloud hidden">
+    <div class="cloud_right">
+        <div class="bar_close">&times;</div>
+    </div>
+    <div class="h4 text-center">恭喜您  订购申请成功</div>
+    <div class="h5 text-center">我们会在24小时内联系您</div>
+    <img src="img/2D_barcode.png">
+    <div class="h6 text-center">关注情报通，更多惊喜等待您</div>
+</div>
+</body>
+</html>
+
